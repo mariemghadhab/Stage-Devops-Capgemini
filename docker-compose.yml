@@ -1,7 +1,7 @@
 version: "3"
 services:
   mysqldb:
-    container_name: achatdb2
+    container_name: achatdb3
     image: mysql/mysql-server:8.0
     restart: unless-stopped
     ports:
@@ -16,7 +16,7 @@ services:
     depends_on:
       - mysqldb
     image: mariemghadhab/achat:1.0.0
-    container_name: achat2
+    container_name: achat3
     restart: on-failure
     ports:
       - 8089:8089
