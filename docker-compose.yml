@@ -32,7 +32,12 @@ services:
     stdin_open: true
     tty: true
 
-
+  angularfrontend: # Define the Angular frontend service
+    container_name: my-angular-app3
+    image: mariemghadhab/achatfront:1.0.0
+    ports:
+      - "4201:4200"
+    restart: on-failure
 
 volumes:
   db:
