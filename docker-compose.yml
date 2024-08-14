@@ -36,7 +36,7 @@ services:
     container_name: my-angular-app3
     image: mariemghadhab/achatfront:2.0.0
     ports:
-      - "4201:4200"
+      - "4201:80"
     restart: on-failure
 
 volumes:
